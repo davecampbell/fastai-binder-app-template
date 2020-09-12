@@ -4,8 +4,8 @@ A template github project for building your binder app based on [Lesson 3 of the
 ## Instructions for Deploying to Binder
 
 _Do the next step only after making sure your voila app is running_
-1. Create a github account if you don't have one yet.
-1. Clone this repo as a template for your own binder app repository. 
+1. Create a [github account](https://github.com) if you don't have one yet.
+1. Clone [this repo](https://github.com/butchland/fastai-binder-app-template) as a template for your own binder app repository. 
     * If you are running on a jupyter notebook, you can create a terminal to run your git clone commands.
     * If git is not installed on your jupyter environment, install it by following [these instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
     * You might have to run the following commands to setup your email and username for git:
@@ -22,6 +22,6 @@ _Do the next step only after making sure your voila app is running_
     * `git add .`
     * `git commit -m 'Add my app notebook and exported learner'`
     * `git push`
-1. Follow the [instructions to run the app on binder](https://forums.fast.ai/t/deploying-your-notebook-as-an-app-under-10-minutes/70621?u=butchland). _Note that the `.gitattributes` file has already been provided as part of this template repo_
+1. Follow the [instructions to run the app on binder](https://forums.fast.ai/t/deploying-your-notebook-as-an-app-under-10-minutes/70621?u=butchland). _Note that the `.gitattributes` file has already been provided as part of this template repo._
 
  
