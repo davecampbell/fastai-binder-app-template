@@ -3,7 +3,7 @@ A template github project for building your binder app based on [Lesson 3 of the
 
 ## Instructions for Deploying to Binder
 
-_Do the next steps only after making sure your voila app is already running in your jupyter notebook environment_
+_Do the next steps only after making sure your voila app is already running in your jupyter notebook environment._
 1. Create a [github account](https://github.com) if you don't have one yet.
 1. Clone [this repo](https://github.com/butchland/fastai-binder-app-template) as a template for your own binder app repository. 
     * If you are running on a jupyter notebook, you can create a terminal to run your git clone commands.
@@ -23,7 +23,10 @@ _Do the next steps only after making sure your voila app is already running in y
     * `git commit -m 'Add my app notebook and exported learner'`
     * `git push`
     _Note: the `git push` command might take a while as it is uploading your `export.pkl` file_
-1. Follow the [instructions to run the app on binder](https://forums.fast.ai/t/deploying-your-notebook-as-an-app-under-10-minutes/70621?u=butchland). _Note that the `.gitattributes` file has already been provided as part of this template repo._
+1. Head over the [binder site](https://mybinder.org/) and follow the [instructions to run the app on binder](https://forums.fast.ai/t/deploying-your-notebook-as-an-app-under-10-minutes/70621?u=butchland). _Note that the `.gitattributes` file has already been provided as part of this template repo._
+
+_Note: just a slight modification to the instructions provided: In the field `Path to a notebook file (optional)`, change the path type from `File` to `URL`._
+
 
 **Big thanks to [@vikbehal](https://forums.fast.ai/u/vikbehal) for providing the instructions!**
 
