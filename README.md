@@ -15,7 +15,6 @@ _Do the next step only after making sure your voila app is running_
 1. Copy over the following:
     * the `export.pkl` created in [Chapter 2](https://github.com/fastai/fastbook/blob/master/02_production.ipynb) as the exported learner for classifying bear images
     * the `requirements.txt` located in the [fastbook](https://github.com/fastai/fastbook) directory 
-    * the `images/grizzly.jpg` located in the `fastbook/images directory` -- put it in the `images` subdirectory in this repo.
     * the stripped down notebook containing the voila app only. A [sample notebook](https://github.com/butchland/fastai-binder-app-template/blob/master/sample-fastai-binder-app.ipynb) is provided but stripping down the [Chapter 2 notebook](https://github.com/fastai/fastbook/blob/master/02_production.ipynb) is a good exercise.
 1. Test your stripped down voila app notebook using voila in your jupyter environment.
 1. Install `git lfs` on your local environment. If you are running on Jupyter notebook, create a terminal and run your installation commands there.  See [instructions here](https://github.com/git-lfs/git-lfs/wiki/Installation)
