@@ -14,7 +14,6 @@ _Do the next steps only after making sure your voila app is already running in y
     * In order to push code to a github repo, it is usually convenient to create an ssh key to authenticate yourself. See [instructions here](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) on creating an ssh key and registering it on github.
 1. Copy over the following:
     * the `export.pkl` created in [Chapter 2](https://github.com/fastai/fastbook/blob/master/02_production.ipynb) as the exported learner for classifying bear images
-    * the `requirements.txt` located in the [fastbook](https://github.com/fastai/fastbook) directory 
     * the stripped down notebook containing the voila app only. A [sample notebook](https://github.com/butchland/fastai-binder-app-template/blob/master/sample-fastai-binder-app.ipynb) is provided but stripping down the [Chapter 2 notebook](https://github.com/fastai/fastbook/blob/master/02_production.ipynb) is a good exercise.
 1. Test your stripped down voila app notebook using voila in your jupyter environment.
 1. Install `git lfs` on your local environment. If you are running on Jupyter notebook, create a terminal and run your installation commands there.  See [instructions here](https://github.com/git-lfs/git-lfs/wiki/Installation)
