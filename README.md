@@ -6,7 +6,7 @@ _(Note that for Colab, see the [special instructions below](#special-instruction
 
 _Do the next steps only after making sure you already created and exported the learner (`export.pkl`) and your stripped down voila app notebook is ready (preferably tested in a jupyter notebook environment with voila)._
 
-1. Create a [github account](https://github.com) if you don't have one yet.
+1. Create a [github account](https://github.com/join?source=header-home) if you don't have one yet.
 1. Fork [this repo](https://github.com/butchland/fastai-binder-app-template) as a template for your own binder app repository. You can [click on this link to generate your own copy.](https://github.com/butchland/fastai-binder-app-template/generate) 
 1. Clone your newly created repository into the machine running your jupyter notebook (which can be either your local machine, Colab, Paperspace Gradient notebooks or your GCP, Sagemaker and other VM instances)
     * If you are running on a jupyter notebook, you can create a terminal to run your git and shell commands. _(For Colab, no terminal environment is provided, so see the [special instructions](#special-instructions-for-colab))_
