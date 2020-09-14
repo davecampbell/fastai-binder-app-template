@@ -10,6 +10,7 @@ _Do the next steps only after making sure you already created and exported the l
 1. Fork [this repo](https://github.com/butchland/fastai-binder-app-template) as a template for your own binder app repository. You can [click on this link to generate your own copy.](https://github.com/butchland/fastai-binder-app-template/generate) 
 1. Clone your newly created repository into the machine running your jupyter notebook (which can be either your local machine, Colab, Paperspace Gradient notebooks or your GCP, Sagemaker and other VM instances)
     * If you are running on a jupyter notebook, you can create a terminal to run your git and shell commands. _(For Colab, no terminal environment is provided, so see the [special instructions](#special-instructions-for-colab))_
+    ![](https://raw.githubusercontent.com/butchland/fastai-binder-app-template/master/images/create-jupyter-terminal.png)
     * If `git` is not installed on your jupyter environment, install it by following [these instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
     * You might have to run the following commands to setup your email and username for `git`:
         * `git config --global user.name "<Your name>"`
@@ -33,7 +34,7 @@ _Do the next steps only after making sure you already created and exported the l
     * `git push`
 
     _Note: the `git push` command might take a while as it is uploading your `export.pkl` file_
-1. Head over the [binder site](https://mybinder.org/) and follow the [instructions to run the app on binder](https://forums.fast.ai/t/deploying-your-notebook-as-an-app-under-10-minutes/70621?u=butchland). _Note that the `.gitattributes` file has already been provided as part of this template repo._
+1. Head over the [binder site](https://mybinder.org/) and follow the [instructions to run the app on binder](https://forums.fast.ai/t/deploying-your-notebook-as-an-app-under-10-minutes/70621?u=butchland). _Note that the `.gitattributes` and `requirements.txt` files have already been provided as part of this template repo._
 
 _Note: just a slight modification to the instructions provided: In the field `Path to a notebook file (optional)`, change the path type from `File` to `URL`._
 
