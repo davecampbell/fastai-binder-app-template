@@ -50,13 +50,17 @@ _Note: just a slight modification to the instructions provided: In the field `Pa
 
 Because Colab uses a non-standard Jupyter environment, it is not as easy to run and test your voila app in Colab. You can however still build and export your learner to `export.pkl` and strip down your Chapter 2 notebook so that it will run on binder as a voila app.
 
-The easiest way to setup your github repo is to fork it and add your stripped down notebook manually.
+The easiest way to setup your github repo is to clone it on Colab and add your exported learner (`export.pkl`) to your repo via `git` (with  `git lfs` installed).
+You can add your stripped down notebook manually as detailed in the [instructions below](#adding-your-stripped-down-voila-app-notebook).
 
 ### Running git and shell commands
 In order to run shell and git commands on Colab, you can create a new cell and
 add a `%%bash` on the first line. You can then add any git or shell commands after the first line and execute it as a pseudo terminal.
 ```
 %%bash
+cd /content
+git config --global user.name "<Your name>"
+git config --global user.email "<email@address>"
 git clone git@github.com:/<your-github-id>/<your-copy-of-fastai-binder-app-template>.git
 cd <your-copy-of-fastai-binder-app-template>
 cp ../export.pkl
