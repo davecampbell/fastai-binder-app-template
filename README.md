@@ -71,8 +71,7 @@ git push
 
 ### Adding your stripped down voila app notebook 
 
-To add your voila notebook (which I assume will be in your `Google Drive` under the `Colab Notebooks` folder), you can save this stripped down voila notebook directly into 
-your Github repository by clicking on the `Save a copy in Github` option under the `File` menu option.
+To add your voila notebook (which I assume will be in your `Google Drive` under the `Colab Notebooks` folder), you can save this stripped down voila notebook directly into  your Github repository by clicking on the `Save a copy in Github` option under the `File` menu option.
 
 _(You might have to authorize Colab to access your github repositories the first time you do this)_. 
 
