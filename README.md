@@ -9,24 +9,31 @@ _Do the next steps only after making sure you already created and exported the l
 1. Create a [github account](https://github.com/join?source=header-home) if you don't have one yet.
 1. Fork [this repo](https://github.com/butchland/fastai-binder-app-template) as a template for your own binder app repository. You can [click on this link to generate your own copy.](https://github.com/butchland/fastai-binder-app-template/generate) 
 1. Clone your newly created repository into the machine running your jupyter notebook (which can be either your local machine, Colab, Paperspace Gradient notebooks or your GCP, Sagemaker and other VM instances)
-    * If you are running on a jupyter notebook, you can create a terminal to run your git and shell commands. _(For Colab, no terminal environment is provided, so see the [special instructions](#special-instructions-for-colab))_
+    * If you are running the notebooks on a standard jupyter notebook environment (e.g. Paperspace Gradient), you can create a terminal to run your git and shell commands. _(For Colab, no terminal environment is provided, so see the [special instructions](#special-instructions-for-colab))_
     ![](https://raw.githubusercontent.com/butchland/fastai-binder-app-template/master/images/create-jupyter-terminal.png)
     * If `git` is not installed on your jupyter environment, install it by following [these instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
     * You might have to run the following commands to setup your email and username for `git`:
         * `git config --global user.name "<Your name>"`
         * `git config --global user.email "<email@address>"`
-    * In order to push code to a github repo, it is usually convenient to create an ssh key to authenticate yourself. See [instructions here](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) on creating an ssh key and registering it on github.
+    * **[Optional]** In order to push code to a github repo, it is usually convenient to create an ssh key to authenticate yourself. See [instructions here](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) on creating an ssh key and registering it on github.
+        * `ssh` is normally installed on Ubuntu and other Linux systems by default, but if it is not installed (e.g. Paperspace Gradient), you can install it by following [the instructions here](https://linuxize.com/post/how-to-enable-ssh-on-ubuntu-18-04/).
     * To clone your repo,run either of the following commands:
-        * `git clone git@github.com:/<your-github-id>/<your-copy-of-fastai-binder-app-template>.git` 
+        *  _(Run this if you have already setup your ssh key)_
+        
+        `git clone git@github.com:/<your-github-id>/<your-copy-of-fastai-binder-app-template>.git` 
 
-        _(Run this if you have already setup your ssh key)_
-        * `git clone https://github.com/<your-github-id>/<your-copy-of-fastai-binder-app-template>.git`
+       
+        * _(Run this if you haven't setup your ssh key,  but this will require you to input your github id and password each time you push your code)_
+        
+        `git clone https://github.com/<your-github-id>/<your-copy-of-fastai-binder-app-template>.git`
 
-        _(Run this if you haven't setup your ssh key,  but this will require you to input your github id and password each time you push your code)_
+        
 1. Copy over the following from your jupyter environment:
     * the `export.pkl` created in [Chapter 2](https://github.com/fastai/fastbook/blob/master/clean/02_production.ipynb) as the exported learner for classifying bear images
-    * the stripped down notebook from [Chapter 2](https://github.com/fastai/fastbook/blob/master/clean/02_production.ipynb) containing only the voila app. A [sample notebook](https://github.com/butchland/fastai-binder-app-template/blob/master/sample-fastai-binder-app.ipynb) is provided but stripping down the [Chapter 2 notebook](https://github.com/fastai/fastbook/blob/master/clean/02_production.ipynb) is a good exercise.
-1. Test your stripped down voila app notebook using voila in your jupyter environment.
+    * the stripped down notebook from [Chapter 2](https://github.com/fastai/fastbook/blob/master/clean/02_production.ipynb) containing only the voila app. 
+
+    A [sample notebook](https://github.com/butchland/fastai-binder-app-template/blob/master/sample-fastai-binder-app.ipynb) is provided but stripping down the [Chapter 2 notebook](https://github.com/fastai/fastbook/blob/master/clean/02_production.ipynb) is a good exercise for building more voila apps in the future.
+1. **[Optional]** Test your stripped down voila app notebook using voila in your jupyter environment.
 1. Install `git lfs` on your local environment. If you are running on Jupyter notebook, create a terminal and run your installation commands there.  See [instructions here](https://github.com/git-lfs/git-lfs/wiki/Installation)
 1. Push your code changes into your github repository. Run the following git commands:
     * `git add .`
@@ -34,7 +41,7 @@ _Do the next steps only after making sure you already created and exported the l
     * `git push`
 
     _Note: the `git push` command might take a while as it is uploading your `export.pkl` file_
-1. Head over the [binder site](https://mybinder.org/) and follow the [instructions to run the app on binder](https://forums.fast.ai/t/deploying-your-notebook-as-an-app-under-10-minutes/70621?u=butchland). _Note that the `.gitattributes` and `requirements.txt` files have already been provided as part of this template repo._
+1. Head over the [binder site](https://mybinder.org/) and  continue following the [instructions to run the app on binder](https://forums.fast.ai/t/deploying-your-notebook-as-an-app-under-10-minutes/70621?u=butchland). _Note that the `.gitattributes` and `requirements.txt` files have already been provided as part of this template repo._
 
 _Note: just a slight modification to the instructions provided: In the field `Path to a notebook file (optional)`, change the path type from `File` to `URL`._
 
